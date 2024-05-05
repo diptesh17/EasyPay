@@ -19,3 +19,7 @@ app.use("/api/v1", router);
 app.listen(PORT, () => {
   console.log(`Server started on : ${PORT}`);
 });
+
+app.get("/", (req, res) => {
+  res.send("Hello");
+});
